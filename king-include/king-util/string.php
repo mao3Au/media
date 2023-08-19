@@ -497,7 +497,7 @@
 	{
 		if (qa_to_override(__FUNCTION__)) { $args=func_get_args(); return qa_call_override(__FUNCTION__, $args); }
 
-		$string = strtr($string, "\r\n\t", '   ');
+		$string = king_strtr($string, "\r\n\t", '   ');
 
 		if (qa_strlen($string) > $length) {
 			$remaining = $length - qa_strlen($ellipsis);
